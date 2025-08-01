@@ -27,5 +27,13 @@ public class App {
 
             boolean: verdadeiro ou falso true/false
           */
+      boolean bool = !true;
+        if(a >= 13){
+            System.out.println("Verdadeiro");
+            System.out.println(a);
+        } else {
+            System.out.println("Boa Noite");
+
+        }
     }
-} 
+  }
