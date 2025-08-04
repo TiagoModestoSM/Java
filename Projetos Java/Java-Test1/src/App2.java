@@ -1,5 +1,4 @@
 
-import java.util.ArrayList;
 
 public class App2 {
     public static void main(String[] args) throws Exception {
@@ -12,9 +11,9 @@ public class App2 {
             System.out.println(conjunto[i]);
         }
 
-        //Array List
+        //Array List + Loop For
 
-        ArrayList<String> nomes = new ArrayList<>();
+        /*ArrayList<String> nomes = new ArrayList<>();
         nomes.add("Tiago");
         nomes.add("Rafael");
         nomes.add("Sara");
@@ -22,11 +21,20 @@ public class App2 {
         nomes.add("Luciana");
         nomes.add("Ester");
 
+
+        //nomes.remove(5);
         for(int i = 0; i <6; i ++){
-        System.out.println(nomes.get(i));
+        System.out.println(nomes.get(i));*/
+
+        // While
+
+        int cont = 0;
+        while (cont <10){
+            System.out.println("Hello World");
+            cont++;
+        }
         }
 
 
     }
 
-}
