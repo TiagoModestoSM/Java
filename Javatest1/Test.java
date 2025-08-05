@@ -6,4 +6,9 @@ public class Test {
         System.out.println(result);
     }
 }
-
+/*
+ * public -> acessível de todo lugar
+ * default -> padrão
+ * private -> somente na mesma classe
+ *  protected -> somente no mesmo package
+ */
