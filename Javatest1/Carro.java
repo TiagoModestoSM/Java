@@ -8,7 +8,7 @@ public class Carro{
         this.modelo = modelo;
         System.err.println("Carro Criado");
     }
-    public String acelerar(){
+    public  String acelerar(){
         System.err.println("Acelerando o Carro: " + this.modelo);
         return "oi";
     }
