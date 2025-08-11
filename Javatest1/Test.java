@@ -1,9 +1,24 @@
 package Javatest1;
 public class Test {
     public static void main(String[] args) {
-        Carro meuCarro = new Carro("Doblo");
-        String result = meuCarro.acelerar();
-        System.out.println(result);
+        Carro meuCarro = new Doblo();
+        meuCarro.acelerar();
+        meuCarro.acelerar();
+        meuCarro.acelerar();
+        meuCarro.acelerar();
+        meuCarro.acelerar();
+        meuCarro.acelerar();
+        meuCarro.acelerar();
+        meuCarro.acelerar();
+        meuCarro.acelerar();
+        meuCarro.acelerar();
+        meuCarro.acelerar();
+        meuCarro.acelerar();
+        meuCarro.acelerar();
+        meuCarro.acelerar();
+        SerVivo eu = new Humano();
+        eu.respirar();
+
     }
 }
 /*
