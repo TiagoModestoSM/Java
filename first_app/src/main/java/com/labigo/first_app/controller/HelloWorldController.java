@@ -5,9 +5,15 @@
 
 package com.labigo.first_app.controller;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
+
+import com.labigo.first_app.domain.User;
+import com.labigo.first_app.service.HelloWorldService;
 
 /**
  *
@@ -24,9 +30,18 @@ import org.springframework.web.bind.annotation.RestController;
 public class HelloWorldController {
 // responde a requisições HTTP GET ou POST ou PUT ou DELETE
 
+    @Autowired
+    // Injeção de dependência do serviço
+    private HelloWorldService helloWorldService;
+
     @GetMapping
+    // Mapeia a requisição GET para o método helloWorld
     public String helloWorld() {
-        return "Tralalelo Tralala";
+        return helloWorldService.helloWorld("Tiago");
     }
 
+    @PostMapping
+    public String helloWorldPost(@RequestBody User body) {
+        return "hello World!" + body.getName();
+    }
 }
