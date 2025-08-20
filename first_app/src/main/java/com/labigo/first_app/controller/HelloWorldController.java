@@ -39,7 +39,7 @@ public class HelloWorldController {
     @GetMapping
     // Mapeia a requisição GET para o método helloWorld
     public String helloWorld() {
-        return helloWorldService.helloWorld("Tiago");
+        return helloWorldService.helloWorld("Test");
     }
 
     @PostMapping("/{id}")
